@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet"  href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col h-screen items-center justify-center">
+    <script src="script.js" defer></script>
+    <div class="container shadow-xl w-[400px] p-10 bg-orange-300 rounded">
+        <h1 class="text-center text-3xl font-bold mb-10">Sign Up</h1>
+        <div class="parent error"></div>
+        <form id="form" action="/">
+            <div class="parent mb-6">
+                <label class="block mb-2" for="username">Name</label>
+                <input class="px-4 focus:outline-none focus:ring-2 focus:ring-orange-400 rounded h-9 w-full" type="text" name="username" id="username" placeholder="Enter username">
+                <div class="error"></div>
+            </div>
+            <div class="parent mb-6">
+                <label class="block mb-2" for="username">Email</label>
+                <input class="px-4 focus:outline-none focus:ring-2 focus:ring-orange-400 rounded h-9 w-full" type="text" name="username" id="email" placeholder="e.g johndoe123@gmail.com">
+            <div class="error"></div>
+            </div>
+            <div class="parent mb-6">
+                <label class="block mb-2" for="username">Password</label>
+                <input class="px-4 focus:outline-none focus:ring-2 focus:ring-orange-400 rounded h-9 w-full" type="password" name="password" id="password" placeholder="Enter password">
+            <div class="error"></div>
+            </div>
+            <div class="parent mb-6">
+                <label class="block mb-2" for="username">Confirm password</label>
+                <input class="px-4 focus:outline-none focus:ring-2 focus:ring-orange-400 rounded h-9 w-full" type="password" name="password2" id="password2" placeholder="Confirm password">
+                <div class="error"></div>
+            </div>
+            <button class="hover:bg-orange-400 bg-orange-500  py-2 px-4 mt-8 mx-auto rounded flex justify-center" type="submit">Sign up</button>
+        </form>
+    </div>
+</body>
+</html>

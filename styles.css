@@ -1,0 +1,21 @@
+.parent.error input {
+    outline: 2px solid red;
+}
+
+.parent.error input:focus {
+    outline: none;
+}
+
+.parent.success input:focus {
+    outline: none;
+}
+
+.parent.success input {
+    outline: 2px solid green;
+}
+
+.parent .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
